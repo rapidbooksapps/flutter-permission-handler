@@ -1,14 +1,14 @@
+////
+////  NotificationPermissionStrategy.h
+////  permission_handler
+////
+////  Created by Tong on 2019/10/21.
+////
 //
-//  NotificationPermissionStrategy.h
-//  permission_handler
+//#import <Foundation/Foundation.h>
+//#import <UserNotifications/UserNotifications.h>
+//#import "PermissionStrategy.h"
 //
-//  Created by Tong on 2019/10/21.
+//@interface NotificationPermissionStrategy : NSObject <PermissionStrategy>
 //
-
-#import <Foundation/Foundation.h>
-#import <UserNotifications/UserNotifications.h>
-#import "PermissionStrategy.h"
-
-@interface NotificationPermissionStrategy : NSObject <PermissionStrategy>
-
-@end
+//@end

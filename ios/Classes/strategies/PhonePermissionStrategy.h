@@ -1,17 +1,17 @@
+////
+////  PhonePermissionStrategy.h
+////  permission_handler
+////
+////  Created by Sebastian Roth on 5/20/19.
+////
 //
-//  PhonePermissionStrategy.h
-//  permission_handler
+//#import <Foundation/Foundation.h>
+//#import "PermissionStrategy.h"
 //
-//  Created by Sebastian Roth on 5/20/19.
+//NS_ASSUME_NONNULL_BEGIN
 //
-
-#import <Foundation/Foundation.h>
-#import "PermissionStrategy.h"
-
-NS_ASSUME_NONNULL_BEGIN
-
-@interface PhonePermissionStrategy : NSObject<PermissionStrategy>
-
-@end
-
-NS_ASSUME_NONNULL_END
+//@interface PhonePermissionStrategy : NSObject<PermissionStrategy>
+//
+//@end
+//
+//NS_ASSUME_NONNULL_END

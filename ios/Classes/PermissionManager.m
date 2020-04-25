@@ -76,33 +76,44 @@
 + (id)createPermissionStrategy:(PermissionGroup)permission {
     switch (permission) {
         case PermissionGroupCalendar:
-            return [EventPermissionStrategy new];
+//            return [EventPermissionStrategy new];
+            return [UnknownPermissionStrategy new];
         case PermissionGroupCamera:
             return [AudioVideoPermissionStrategy new];
         case PermissionGroupContacts:
-            return [ContactPermissionStrategy new];
+//            return [ContactPermissionStrategy new];
+            return [UnknownPermissionStrategy new];
         case PermissionGroupLocation:
         case PermissionGroupLocationAlways:
         case PermissionGroupLocationWhenInUse:
-            return [[LocationPermissionStrategy alloc] initWithLocationManager];
+//            return [[LocationPermissionStrategy alloc] initWithLocationManager];
+            return [UnknownPermissionStrategy new];
         case PermissionGroupMediaLibrary:
-            return [MediaLibraryPermissionStrategy new];
+//            return [MediaLibraryPermissionStrategy new];
+            return [UnknownPermissionStrategy new];
         case PermissionGroupMicrophone:
-            return [AudioVideoPermissionStrategy new];
+//            return [AudioVideoPermissionStrategy new];
+            return [UnknownPermissionStrategy new];
         case PermissionGroupPhone:
-            return [PhonePermissionStrategy new];
+//            return [PhonePermissionStrategy new];
+            return [UnknownPermissionStrategy new];
         case PermissionGroupPhotos:
             return [PhotoPermissionStrategy new];
         case PermissionGroupReminders:
-            return [EventPermissionStrategy new];
+//            return [EventPermissionStrategy new];
+            return [UnknownPermissionStrategy new];
         case PermissionGroupSensors:
-            return [SensorPermissionStrategy new];
+//            return [SensorPermissionStrategy new];
+            return [UnknownPermissionStrategy new];
         case PermissionGroupSpeech:
-            return [SpeechPermissionStrategy new];
+//            return [SpeechPermissionStrategy new];
+            return [UnknownPermissionStrategy new];
         case PermissionGroupNotification:
-            return [NotificationPermissionStrategy new];
+//            return [NotificationPermissionStrategy new];
+            return [UnknownPermissionStrategy new];
         case PermissionGroupStorage:
-            return [StoragePermissionStrategy new];
+//            return [StoragePermissionStrategy new];
+            return [UnknownPermissionStrategy new];
         default:
             return [UnknownPermissionStrategy new];
     }
